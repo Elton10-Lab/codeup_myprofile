@@ -1,0 +1,238 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: linear-gradient(180deg, #0b0f14, #0f1623);
+  color: #e6eaf0;
+  min-height: 100vh;
+}
+
+/* CONTAINER PRINCIPAL */
+.hero {
+  padding: 40px 60px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* TOPO */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* MENU HAMBURGER */
+.menu {
+  width: 28px;
+  cursor: pointer;
+}
+
+.menu span {
+  display: block;
+  height: 3px;
+  background: #cfd6e4;
+  margin: 6px 0;
+  border-radius: 3px;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.content {
+  margin-top: 120px;
+  max-width: 650px;
+}
+
+.content h1 {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2f6df6;
+  margin-bottom: 28px;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #b9c0cf;
+  margin-bottom: 40px;
+}
+
+/* BOTÃO */
+.btn {
+  display: inline-block;
+  padding: 16px 36px;
+  background: #2f6df6;
+  color: #ffffff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: #2557c9;
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .hero {
+    padding: 30px;
+  }
+
+  .content {
+    margin-top: 80px;
+  }
+
+  .content h1 {
+    font-size: 44px;
+  }
+
+  .content h2 {
+    font-size: 24px;
+  }
+}
+/* EXPERIENCE SECTION */
+.experience {
+  margin-top: 140px;
+  max-width: 800px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+/* JOB */
+.job {
+  margin-bottom: 60px;
+}
+
+.company {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.role {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2f6df6;
+  margin-bottom: 6px;
+}
+
+.date {
+  font-size: 14px;
+  color: #8f98aa;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* LIST */
+.responsibilities {
+  list-style: none;
+}
+
+.responsibilities li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 18px;
+  line-height: 1.6;
+  color: #c2c8d6;
+}
+
+/* CHECK ICON */
+.responsibilities li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #9fb4ff;
+  font-size: 14px;
+}
+
+/* EDUCATION */
+.education {
+  margin-top: 40px;
+}
+
+.education-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.focus {
+  font-size: 16px;
+  color: #aeb6c7;
+}
+
+.focus span {
+  color: #e6eaf0;
+  font-weight: 600;
+}
+
+/* ABOUT SECTION */
+.about {
+  margin-top: 140px;
+  max-width: 800px;
+}
+
+.about-text {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #c2c8d6;
+  margin-bottom: 24px;
+}
+
+.about-text strong {
+  color: #e6eaf0;
+  font-weight: 700;
+}
+/* NAV BUTTONS */
+.nav-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #2f6df6;
+  color: #2f6df6;
+}
+
+.btn-outline:hover {
+  background: #2f6df6;
+  color: #ffffff;
+}
+
+/* SCROLL SUAVE */
+html {
+  scroll-behavior: smooth;
+}
